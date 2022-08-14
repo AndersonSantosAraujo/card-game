@@ -1,0 +1,50 @@
+.board {
+  display: flex;
+  flex-direction: column;
+
+  &__nav {
+    align-self: flex-end;
+    padding: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background-color: #ffffff50;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

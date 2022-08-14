@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 30px;
+    min-width: 270px;
+
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      display: block;
+      height: 35px;
+      border-radius: 5px;
+      padding: 0 15px;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent;
+      width: 100%;
+
+      &:focus-visible {
+        outline: none;
+        background-color: #ffffff50;
+      }
+
+      &::placeholder {
+        color: #ffffff80;
+      }
+    }
+
+    &__button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      border: 2px solid #fff;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover,
+      &:active,
+      &:focus-visible {
+        background-color: #ffffff50;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

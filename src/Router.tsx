@@ -8,7 +8,7 @@ const Router = () => {
     <UserStorage>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Board/" element={<Board />} />
+        <Route path="/board/" element={<Board />} />
       </Routes>
     </UserStorage>
   );

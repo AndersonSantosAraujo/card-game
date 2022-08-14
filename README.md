@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Desafio Cartas Aleatórias
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O desafio consiste em construir um 'jogo' de cartas aleatórias com embaralhamento
 
-## Available Scripts
+Algumas funcionalidades podem ser adicionadas, como: pontuação geral das cartas, score de comparação, animações das cartas e outras
 
-In the project directory, you can run:
+### Pontos Propostos no Desafio
 
-### `npm start`
+    - Consumir uma API Externa (utilize uma dessas APIs: https://github.com/public-apis/public-apis).
+    - Construir uma tela que exibe cinco cartas, o conteúdo dessas cartas deve ser alimentado via API.
+    - Cada carta deve conter pelo menos: nome, imagem, descrição e um valor aleatório de 0 a 10 que podemos chamar de pontos.
+    - Ao acessar a primeira página ele deve digitar um nome e clicar em ver cartas.
+    - Na tela seguinte ele visualiza as 5 cartas e o  seu nome no canto superior direito.
+    - Na tela de cartas ele tem dois botões, onde um deles permite puxar uma nova carta aleatoriamente, ele pode apertar apenas 3 vezes.
+    - As cartas nunca são descartadas, caso ele puxe 3 novas cartas ele estará visualizando 8 cartas.
+    - O segundo botão permite a ele embaralhar a ordem das cartas que está visualizando.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Como Rodar a Aplicação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    1. Clone o repositório.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Instale as dependências com 'npm i' ou 'yarn'
+3. Rode as builds: de produção com 'npm/yarn build' ou a de desenvolvimento com 'npm/yarn start'

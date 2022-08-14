@@ -1,14 +1,10 @@
-// Breakpoints
-$mobile: 768px;
-$desktop_xsm: 980px;
-$desktop_sm: 1080px;
-$desktop_md: 1280px;
-// Background Colors
-$backgound-1: #fafafa;
-$backgound-2: #ff00ff;
-// Font Colors
-$color-1: #fff;
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
 // Reset
+* {
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -113,7 +109,8 @@ section {
 }
 body {
   line-height: 1;
-  background-color: $backgound-1;
+  background: url("./assets/background.jpg");
+  background-size: cover;
 }
 ol,
 ul {
@@ -142,8 +139,6 @@ table {
   border-spacing: 0;
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
   font-size: 62.5%;
 }
 //General

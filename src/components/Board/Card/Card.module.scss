@@ -1,0 +1,105 @@
+.card {
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+
+  &__front {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    height: 330px;
+    width: 190px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &::after {
+      content: "";
+      align-self: center;
+      position: absolute;
+      width: 180px;
+      height: 320px;
+      top: 5px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../../../assets/back-card.jpg");
+    background-size: contain;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &__image {
+    border-radius: 5px;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__specie {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__habitat {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__score {
+    font-size: 1.4rem;
+    color: #fff;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
