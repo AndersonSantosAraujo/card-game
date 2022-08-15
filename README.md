@@ -18,6 +18,5 @@ Algumas funcionalidades podem ser adicionadas, como: pontuação geral das carta
 # Como Rodar a Aplicação
 
     1. Clone o repositório.
-
-2. Instale as dependências com 'npm i' ou 'yarn'
-3. Rode as builds: de produção com 'npm/yarn build' ou a de desenvolvimento com 'npm/yarn start'
+    2. Instale as dependências com 'npm i' ou 'yarn'
+    3. Rode as builds: de produção com 'npm/yarn build' ou a de desenvolvimento com 'npm/yarn start'
